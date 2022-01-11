@@ -150,6 +150,8 @@ public class Dashboard extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+       // Toast.makeText(getApplicationContext(), "Mode"+mode, Toast.LENGTH_SHORT).show();
         if(mode >0)
         {
             show.setText("Auto Mode");
@@ -168,6 +170,7 @@ public class Dashboard extends AppCompatActivity {
         {
             Motor.setText("Motor Is Off");
             Notify();
+
         }
         if (status < 1)
         {
